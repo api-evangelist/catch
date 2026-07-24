@@ -1,4 +1,16 @@
 aid: catch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/catch.png
 name: Catch
 description: 'Catch is a company surfaced as a portfolio company of index-ventures and added to the API
   Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
@@ -10,9 +22,23 @@ x-backed-by:
 - index-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: parked-domain
+x-enrichment:
+  last_run: '2026-07-18'
+  method: probed
+  result: no-provider-surface
+  note: 'getcatch.com resolves 200 but is a GoDaddy registrar-parked lander (NS
+    domaincontrol.com; JS redirect to /lander; parking-lander SPA). All paths incl.
+    /.well-known/* return the same parking HTML (text/html catch-all), so well-known
+    200s are false positives, not real documents. No developer portal, docs, API
+    reference, OpenAPI, packages, MCP, CLI, or event surface. Company (Catch,
+    pay-by-bank checkout/rewards fintech backed by Index Ventures) appears defunct.
+    Nothing searchable or faithfully generatable; no artifacts produced (no
+    fabrication). Residual Google Workspace MX/SPF only. Re-check if domain
+    de-parks.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
